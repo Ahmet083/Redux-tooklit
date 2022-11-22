@@ -20,7 +20,13 @@ function App() {
          <label for="basic-url" className="form-label">Isminiz</label>
             <div className="input-group mb-3">            
             <input type="text" className="form-control" 
+            onKeyUp={e => console.log('Key Up Event Executed' + e.target.value)}
+            onKeyDown={e => console.log('Key Down Event Executed' + e.target.value)}
+            onBlur={e => console.log('Blur Event Executed' + e.target.value)}
+            onFocus={e => console.log('Focus Event Executed' + e.target.value)}
+            onClick={e => console.log('Click Event Executed' + e.target.value)}
             onChange={event => dispatch(setFirstname(event.target.value))}
+
             placeholder="Isminizi yaziniz" aria-label="Username" aria-describedby="basic-addon1" />
           </div>
          </div>
@@ -45,6 +51,15 @@ function App() {
         </div>
      <div className="col-6">
      <UserShow />
+     </div>
+
+     <div className="col-6">
+     
+     Isim: {userState.firstname}
+     <br />
+     Soyisim: {userState.lastname}
+     <br />
+     Yas: {userState.age}
      </div>
      </div>
     </div>
