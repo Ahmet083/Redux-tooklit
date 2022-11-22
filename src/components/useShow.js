@@ -6,7 +6,7 @@ const userState = useSelector(state => state.user)
 
 return (
     <div>
-    <strong>Isim:</strong> {userState.firsname}
+    <strong>Isim:</strong> {userState.firstname}
     <br />
     <strong>Soyisim:</strong> {userState.lastname}
     <br />

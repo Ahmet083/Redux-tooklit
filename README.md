@@ -1,1 +1,1 @@
-<h1>video 2'de kaldim<h1>
+<h1>video 2'de 18.dakikada kaldim<h1>
